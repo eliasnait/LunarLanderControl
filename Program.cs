@@ -12,9 +12,9 @@ int Control(int altitude)
 void Test(int altitude)
 {
     int thruster = Control(altitude);
-    bool behaviorCorrect = (altitude > 100 && thruster == 0) ||
-                           (altitude is <= 100 and > 0 && thruster == 1) ||
-                           (altitude <= 0 && thruster == 0);
+    bbool behaviorCorrect = (altitude > 100 && thruster == 0) ||
+                       (altitude <= 100 && altitude > 0 && thruster == 1) ||
+                       (altitude <= 0 && thruster == 0);
     var behaviorCorrectIcon = behaviorCorrect ? "✅" : "❌";
     Console.WriteLine($"For altitude {altitude}, your thruster is {thruster} |{behaviorCorrectIcon}|");
 }
